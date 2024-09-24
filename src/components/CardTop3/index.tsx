@@ -28,7 +28,7 @@ export default function CardTop3(props: CardTop3Props) {
 
                 </div>
             </div>
-            <div className="date-top3"> {props.data.replaceAll('-', '/')} </div>
+            <div className="date-top3"> {props.data.split('/').join('_')} </div>
         </div>
     );
 }
