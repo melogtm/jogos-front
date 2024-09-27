@@ -12,7 +12,7 @@ body, html {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   margin: 0 auto;
-  min-height: 300px;
+  min-height: 250px;
   margin-bottom: 5vh;
 }
 
@@ -132,7 +132,7 @@ body, html {
   /* Ajusta a largura e altura das divs .podio */
   .podio {
     width: calc(100% - 2rem); /* Margem lateral ajustada */
-    padding: 1rem; /* Preenchimento interno para garantir bom espaçamento */
+    margin-bottom: 5vh;
   }
 
   .podio-top-1 {
@@ -140,11 +140,11 @@ body, html {
   }
 
   .podio-top-2 {
-    height: 275px;
+    height: 300px;
   }
 
   .podio-top-3 {
-    height: 200px;
+    height: 250px;
   }
 
   .box-imagem-top3 {
@@ -161,7 +161,21 @@ body, html {
 
   .podio {
     width: 95vw; /* Ajusta para largura quase total */
+    height: auto;
     margin: 0 auto;
+    margin-bottom: 5vh;
+  }
+
+  .podio-top-1 {
+    height: 300px; /* Altura ajustada para telas menores */
+  }
+
+  .podio-top-2 {
+    height: 250px;
+  }
+
+  .podio-top-3 {
+    height: 250px;
   }
 
   .box-imagem-top3 {

@@ -63,6 +63,7 @@
 
   .card-primary h6 {
     font-size: 0.9rem;
+    line-height: 1.3 !important;
   }
 }
 
@@ -81,5 +82,6 @@
   }
   .card-primary h6 {
     font-size: 0.7rem;
+    line-height: 1.3 !important;
   }
 }

@@ -1,6 +1,6 @@
 .tituloSecao {
   width: 40%;
-  min-width: 500px;
+  min-width: 300px; /* Diminuí o min-width para ser mais adaptável em telas menores */
   height: 5rem;
   background-color: var(--primary1);
   color: white;
@@ -17,4 +17,34 @@
   width: fit-content;
   font-weight: 400;
   text-shadow: 4px 4px 0px #361b48;
+}
+
+/* Responsividade */
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+  .tituloSecao {
+    width: 70%; /* Ajusta a largura para telas menores */
+    min-width: 250px; /* Ajusta o tamanho mínimo para caber em dispositivos menores */
+    height: 4rem; /* Altura menor para manter a proporção */
+  }
+
+  .titulo {
+    font-size: 2rem; /* Reduz o tamanho da fonte para se ajustar à tela menor */
+    text-shadow: 3px 3px 0px #361b48; /* Ajuste leve na sombra para combinar com o tamanho da fonte */
+  }
+}
+
+/* Para telas muito pequenas (menos de 550px) */
+@media (max-width: 550px) {
+  .tituloSecao {
+    width: 90%; /* Quase toda a largura da tela */
+    min-width: 200px; /* Mais adaptável em telas extremamente pequenas */
+    height: 3.5rem; /* Ajusta ainda mais a altura */
+  }
+
+  .titulo {
+    font-size: 1.5rem; /* Tamanho da fonte ainda menor para caber em dispositivos pequenos */
+    text-shadow: 2px 2px 0px #361b48; /* Ajuste para manter a harmonia visual */
+  }
 }
